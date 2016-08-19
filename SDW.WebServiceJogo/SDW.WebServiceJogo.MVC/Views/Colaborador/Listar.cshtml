@@ -1,0 +1,34 @@
+﻿@model IEnumerable<SDW.WebServiceJogoAPI.Models.Colaborador>
+
+@Helper.Mensagem(TempData["Msg"])
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ColaboradorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <!--@Html.DisplayFor(modelItem => item.ColaboradorId)-->
+            @item.ColaboradorId
+        </td>
+        <td>
+            @item.Nome
+            <!--@Html.DisplayFor(modelItem => item.Nome)-->
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ColaboradorId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ColaboradorId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ColaboradorId })
+        </td>
+    </tr>
+}
+
+</table>
