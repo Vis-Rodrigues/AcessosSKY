@@ -31,7 +31,7 @@ namespace SDW.WebServiceJogo.MVC.Controllers
             _unit.Save();
 
             TempData["msg"] = "Acesso Cadastrado com Sucesso!";
-            return RedirectToAction("Listar");
+            return RedirectToAction("Listar", "AcessoColaborador");
         }
 
         [HttpGet]
