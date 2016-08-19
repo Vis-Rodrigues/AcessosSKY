@@ -136,6 +136,7 @@
     <Compile Include="Controllers\AcessoColaboradorController.cs" />
     <Compile Include="Controllers\AcessoController.cs" />
     <Compile Include="Controllers\ColaboradorController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -167,6 +168,7 @@
     <Content Include="Views\Acesso\Editar.cshtml" />
     <Content Include="Views\AcessoColaborador\Listar.cshtml" />
     <Content Include="Views\AcessoColaborador\Editar.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
